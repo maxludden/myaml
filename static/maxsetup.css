@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+:root {
+    --main-bg-color: #222222;
+    --main-color: #eeeeee;
+    --alternate-bg-color: #444444;
+    --alternate-color: #cccccc;
+    --main-border-color: #AAAAAA;
+    --table-header-bg-color: #e2e2e2;
+    --link-color: #22ee22;
+    --main-header-color: #84b9ff;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --main-bg-color: white;
+        --main-color: black;
+        --alternate-bg-color: #efefef;
+        --alternate-color: #222222;
+        --main-border-color: #BBBBBB;
+        --table-header-bg-color: #2e2e2e;
+        --link-color: #22ee22;
+        --main-header-color: #002555;
+    }
+}
+
+/**** Fonts *******/
+@font-face {
+    font-family: "Urbanist-Thin";
+    font-style: normal;
+    src: "Urbanist-Thin.ttf"
+}
+
+@font-face {
+    font-family: "Urbanist-ThinItalic";
+    font-style: normal;
+    src: "Urbanist-thinItalic.ttf"
+}
+
+@font-face {
+    font-family: "Urbanist-Regular";
+    font-style: normal;
+    src: "Urbanist-Regular.ttf"
+}
+
+@font-face {
+    font-family: "Urbanist-Italic";
+    font-style: italic;
+    src: "Urbanist-Italic.ttf"
+}
+
+@font-face {
+    font-family: "Urbanist-Black";
+    font-style: normal;
+    font_weight: bold;
+    src: "Urbanist-Black.ttf"
+}
+
+@font-face {
+    font-family: "Urbanist-BlackItalic";
+    font-style: normal;
+    font_weight: bold;
+    src: "Urbanist-BlackItalic.ttf"
+}
+
+@font-face {
+    font-family: "White Modesty";
+    font-style: normal;
+    src: "White Modesty.ttf" ";
+
+}
+
+/***** End of Fonts **********/
+
+html {
+    font-size: 1em;
+    font-family: "Urbanist-Regular", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+    line-height: 1.2em;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+}
+
+/****** Headers *********/
+h1,
+h2,
+h3,
+h4,
+h5 {
+    display: block;
+    text-align: center;
+    font-family: "Urbanist-Regular", "Myriad Pro", helvetica, sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: var(--main-header-color)
+}
+
+h2 {
+    font-size: 1.25em;
+    line-height: 1.1em;
+    color: var(--alternate-color);
+}
+
+h3 {
+    font-size: 1.1em;
+    line-height: 1em;
+    font-family: "Urbanist-Thin", "Myriad Pro", helvetica, sans-serif;
+    color: var(--alternate-color);
+}
+
+h4 {
+    font-size: 1.1em;
+    line-height: 1em;
+    font-family: "Urbanist-ThinItalic", "Myriad Pro", helvetica, sans-serif;
+    color:var(--main-bg-color);
+}
+
+h5 {
+    font-size: 0.9em;
+    line-height: 1;
+}
+
+/* End of Headers */
+
+/****** Images *********/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/****** End of Images *********/
+
+/************** Body ***************/
+body {
+    margin: 0;
+    padding: 1em;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 2;
+    -ms-hyphenate-limit-chars: 6 3 2;
+    -webkit-hyphenate-limit-lines: 2;
+}
+
+/*********** @media ***********/
+@media(min-width: 390px) {
+    body {
+        margin: auto;
+    }
+}
+
+table {
+    display: table;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-collapse: collapse;
+}
+
+th {
+    padding: .5em;
+    color: var(--main-bg-color);
+    background: var(--table-header-bg-color);
+    font-family: "Urbanist-Bold", "Lemon/Milk", "Myriad Pro", helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    border: none
+}
+
+td {
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-collapse: collapse;
+    font-family: "Urbanist-Regular", "Myriad Pro", helvetica, sans-serif;
+    text-align: center;
+}
+
+pre {
+    background: var(--alternate-bg-color);
+}
+
+blockquote {
+    font-style: italic;
+    margin: 4em 2em;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--alternate-bg-color);
+    color: var(--alternate-color);
+}
+
+hr {
+    margin: 5px;
+}
+
+
+.note {
+    font-family:
+        "Urbanist-Thin",
+        -apple-system,
+        BlinkMacSystemFont,
+        "helvetica neue",
+        helvetica,
+        roboto,
+        noto,
+        "segoe ui",
+        arial,
+        sans-serif;
+    font-size: .8em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.license {
+    font-family:
+        "Urbanist-Thin",
+        "century Gothic",
+        "helvetica neue",
+        helvetica,
+        roboto,
+        noto,
+        arial,
+        sans-serif;
+    font-size: .7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: var(--main-border-color);
+    border-radius: 5px;
+    color: var(--alternate-bg-color);
+    background:var(--alternate-color)
+}
+
+.github-corner {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    mix-blend-mode: darken;
+    font-family: Lato, proxima-nova, Helvetica Neue, Arial, sans-serif;
+}
+
+.github {
+    color: var(--main-header-color);
+    text-decoration: underline;
+}
+
+.repo {
+    color: var(--alternate-color);
+    text-decoration: underline;
+}
