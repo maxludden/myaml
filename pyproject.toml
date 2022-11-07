@@ -12,9 +12,8 @@ maxconsole = "^0.4.0"
 pyaml = "^21.10.1"
 
 [tool.poetry.scripts]
-myaml="myaml:main"
+max_yaml="myaml:main"
 setup_files="static.setup_files:main"
-
 
 [build-system]
 requires = ["poetry-core"]
