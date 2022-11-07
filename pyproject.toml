@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "myaml"
+name = "max_yaml"
 version = "0.1.0"
 description = "Creates dump, dumps, load, and load function for yaml doc based on the json stdlib."
 authors = ["maxludden <dev@maxludden.com>"]

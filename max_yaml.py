@@ -1,4 +1,4 @@
-# maxsetup/myaml.py
+# maxsetup/max_yaml.py
 from pathlib import Path
 from typing import Any
 
